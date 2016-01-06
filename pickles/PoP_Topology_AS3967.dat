@@ -1,0 +1,172 @@
+(dp0
+I0
+(dp1
+I11
+I1
+ssI1
+(dp2
+I11
+I1
+ssI3
+(dp3
+I11
+I1
+ssI10
+(dp4
+I18
+I1
+ssI11
+(dp5
+I0
+I1
+sI1
+I1
+sI18
+I1
+sI3
+I1
+sI13
+I1
+ssI13
+(dp6
+I11
+I1
+ssI18
+(dp7
+I10
+I1
+sI11
+I1
+ss.(dp0
+I0
+S'Sunnyvale, CA'
+p1
+sI1
+S'Palo Alto, CA'
+p2
+sg1
+I0
+sI3
+S'San Jose, CA'
+p3
+sI4
+S'Chicago, IL'
+p4
+sI5
+S'San Francisco, CA'
+p5
+sI6
+S'Sterling, VA'
+p6
+sI7
+S'Oak Brook, IL'
+p7
+sI8
+S'Jersey City, NJ'
+p8
+sI9
+S'Boston, MA'
+p9
+sI10
+S'Irvine, CA'
+p10
+sg6
+I6
+sI12
+S'Washington, DC'
+p11
+sI2
+S'Herndon, VA'
+p12
+sI14
+S'Waltham, MA'
+p13
+sg10
+I10
+sI16
+S'Tokyo, Japan'
+p14
+sI17
+S'London, UnitedKingdom'
+p15
+sI18
+S'El Segundo, CA'
+p16
+sS'New York, NY'
+p17
+I13
+sg16
+I18
+sg15
+I17
+sg9
+I9
+sg11
+I12
+sg2
+I1
+sg3
+I3
+sg5
+I5
+sg7
+I7
+sI13
+g17
+sI11
+S'Santa Clara, CA'
+p18
+sg13
+I14
+sg14
+I16
+sI15
+S'Karlsruhe, Germany'
+p19
+sg8
+I8
+sg12
+I2
+sg4
+I4
+sg18
+I11
+sg19
+I15
+s.(dp0
+I4006
+(lp1
+I13
+asI3561
+(lp2
+I4
+aI18
+aI2
+aI8
+aI13
+aI7
+aI1
+aI11
+aI6
+aI0
+aI16
+aI14
+aI12
+asI174
+(lp3
+sI701
+(lp4
+sI3320
+(lp5
+I6
+asI3356
+(lp6
+I3
+asI3549
+(lp7
+I17
+aI13
+asI10910
+(lp8
+I5
+as.
