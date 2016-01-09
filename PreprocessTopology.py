@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import os
-from ReadEdges import *
+from ReadEdges import ReadEdges
 from ShortestPath import dijkstra
 import pickle
 
@@ -38,17 +38,16 @@ for asn in AS_care:
     # PoPNames record the location name of the PoP
     PoPNames = []
     for edge in edgesInternal:
-        PoPNames += edge    
-    print len(PoPNames)
-    print len(set(PoPNames))
-    
+        PoPNames += edge
+
     # Record external link of the AS
     edgesExternal = {}
     for asnTem in AS_topology[asn]:
         str = './Rocketfuel/maps-n-paths/%d:%d/edges'%(asn,asnTem)
         edgesExternal[asnTem] = ReadEdges(str)
         for edge in edgesExternal[asnTem]:
-            PoPNames += edge 
+            PoPNames += edge            
+                
     #        if not edge[0] in PoPsN2I:
     #            print str
     #            print 'edge %s is not in the dict'%edge[0]
@@ -67,7 +66,6 @@ for asn in AS_care:
         PoPsDict[name] = i
         PoPsDict[i] = name
         i += 1
-    print PoPsDict
     del i
     
     # Mapping PoP names to indexes    
@@ -91,10 +89,14 @@ for asn in AS_care:
         PoP_graph[edge[1]][edge[0]] = 1
         
     # Record the external topology
-    # The neighboring ASN as the key, and the PoP indexes are its values
+    # The PoP index as the key, and the neighboring ASN list as its value
     ExternalAS_Dict = {}
     for asnTem in edgesExternal:
-        ExternalAS_Dict[asnTem] = [i for (i, j) in edgesExternal[asnTem]]
+        for (i, j) in edgesExternal[asnTem]:
+            if not i in ExternalAS_Dict:
+                ExternalAS_Dict[i] = []    
+            ExternalAS_Dict[i].append(asnTem)         
+#        ExternalAS_Dict[asnTem] = [i for (i, j) in edgesExternal[asnTem]]
         
     print 'PoP_graph[%d]='%asn, PoP_graph
     # Testing whether the PoP graph is a connected graph by dijkstra
@@ -103,6 +105,7 @@ for asn in AS_care:
     print 'dist=', dist
     print 'values=', dist.values()
     print 'max dist=', max(dist.values())
+    assert max(dist.values()) < 10
     print 'ExternalAS_Dict.values()=', ExternalAS_Dict.values()
     print '#######################End of AS%d######################'%asn
     
