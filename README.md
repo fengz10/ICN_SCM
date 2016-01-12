@@ -33,7 +33,8 @@ In the edges.lat data of 3566:3566, there is a line of '3356:Manchester, MA -> 3
 ./Rocketfuel/maps-n-paths/3356:3356/edges.lat  3356Boston, MA  3356Manchester, MA 100000
 ./Rocketfuel/maps-n-paths/3356:3356/edges.lat  3356Manchester, MA  3356Boston, MA 100000
 ./Rocketfuel/maps-n-paths/7018:7018/edges.lat  7018Gardena, CA  7018Los Angeles, CA 100000
-./Rocketfuel/maps-n-paths/7018:7018/edges.lat  7018Los Angeles, CA  7018Gardena, CA 100000 
+./Rocketfuel/maps-n-paths/7018:7018/edges.lat  7018Los Angeles, CA  7018Gardena, CA 100000
+
 
 ## Note
 Test every function before use it. Make sure it works right, especially for some particular parameters. For example, whether the first step and last step nodes is the same as we expected.
