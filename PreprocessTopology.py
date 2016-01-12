@@ -6,8 +6,9 @@ import pickle
 
 as_edege = os.listdir('./Rocketfuel/maps-n-paths/')
 AS_topology = {}
-AS_care=(1221, 1239, 2914, 3257, 3356, 3967, 4755, 6461, 7018)
-# No information of AS1755 was found in the dataset, although AS1755 appeared in the paper
+asnCare=(1221, 1239, 2914, 3257, 3356, 3967, 4755, 6461, 7018)
+# No information of AS1755 was found in the dataset, although AS1755 
+# appeared in the paper
 
 for edge in as_edege:
     if edge.find(':') == -1:
@@ -31,22 +32,23 @@ print len(AS_topology)
 # Only AS 4600 and AS 3582 have no internal topology data
 
 
-for asn in AS_care:
+for asn in asnCare:
     # Read internal PoP link of the AS      
-    edgesInternal = ReadEdges('./Rocketfuel/maps-n-paths/%d:%d/edges'%(asn, asn))
+    edgesInternal=ReadEdges('./Rocketfuel/maps-n-paths/%d:%d/edges.lat'\
+    %(asn,asn))
     
     # PoPNames record the location name of the PoP
     PoPNames = []
     for edge in edgesInternal:
-        PoPNames += edge
+        PoPNames += [edge[0], edge[1]]
 
     # Record external link of the AS
     edgesExternal = {}
     for asnTem in AS_topology[asn]:
-        str = './Rocketfuel/maps-n-paths/%d:%d/edges'%(asn,asnTem)
+        str = './Rocketfuel/maps-n-paths/%d:%d/edges.lat'%(asn,asnTem)
         edgesExternal[asnTem] = ReadEdges(str)
         for edge in edgesExternal[asnTem]:
-            PoPNames += edge            
+            PoPNames += [edge[0], edge[1]]            
                 
     #        if not edge[0] in PoPsN2I:
     #            print str
@@ -69,12 +71,14 @@ for asn in AS_care:
     del i
     
     # Mapping PoP names to indexes    
-    edgesInternal = [(PoPsDict[n1], PoPsDict[n2]) for (n1, n2) in edgesInternal]
+    edgesInternal = [(PoPsDict[n1], PoPsDict[n2], delay) for (n1, n2, delay)\
+    in edgesInternal]
     # Mapping PoP name to indexes fo external links
     for asnTem in edgesExternal:
         # Most external links connect the routers in the same PoP location, 
         # and we exclude those not in the same PoP location
-        edgesExternal[asnTem] = [(PoPsDict[n1], PoPsDict[n2]) for (n1, n2) in edgesExternal[asnTem] if n1 == n2]
+        edgesExternal[asnTem] = [(PoPsDict[n1], PoPsDict[n2], delay)\
+        for (n1, n2, delay) in edgesExternal[asnTem] if n1 == n2]
         print 'edgesExternal[%d]='%asnTem, edgesExternal[asnTem]
         
     # Record the internal topology into the standard graph structure
@@ -85,14 +89,19 @@ for asn in AS_care:
         if edge[1] not in PoP_graph:
             PoP_graph[edge[1]] = {}
         
-        PoP_graph[edge[0]][edge[1]] = 1
-        PoP_graph[edge[1]][edge[0]] = 1
+        PoP_graph[edge[0]][edge[1]] = edge[2]
+        PoP_graph[edge[1]][edge[0]] = edge[2]
+        
+    #################################################
+    if asn == 1221:
+        print 'testing###################################'
+        print PoP_graph
         
     # Record the external topology
     # The PoP index as the key, and the neighboring ASN list as its value
     ExternalAS_Dict = {}
     for asnTem in edgesExternal:
-        for (i, j) in edgesExternal[asnTem]:
+        for (i, j, delay) in edgesExternal[asnTem]:
             if not i in ExternalAS_Dict:
                 ExternalAS_Dict[i] = []    
             ExternalAS_Dict[i].append(asnTem)         
@@ -105,8 +114,8 @@ for asn in AS_care:
     print 'dist=', dist
     print 'values=', dist.values()
     print 'max dist=', max(dist.values())
-    assert max(dist.values()) < 10
-    print 'ExternalAS_Dict.values()=', ExternalAS_Dict.values()
+    assert max(dist.values()) < 1000
+    print 'ExternalAS_Dict=', ExternalAS_Dict
     print '#######################End of AS%d######################'%asn
     
     # Record the results into pickle files    
