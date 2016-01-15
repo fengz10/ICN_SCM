@@ -13,7 +13,7 @@ def CalCostOfRatio(asn):
     for ratio in np.arange(0, 1.01, 0.05):
         totalCost0 = []
         totalCost1 = []
-        for i in range(5):
+        for i in range(10):
             totalCost0.append(main(asn, ratio, 3, 0.7, 0))
             totalCost1.append(main(asn, ratio, 3, 0.7, 1))
         
@@ -37,7 +37,7 @@ def CalCostOfZipf(asn):
     for alpha in np.arange(0.6, 1.41, 0.05):
         totalCost0 = []
         totalCost1 = []
-        for i in range(5):
+        for i in range(10):
             totalCost0.append(main(asn, 0.2, 3, alpha, 0))
             totalCost1.append(main(asn, 0.2, 3, alpha, 1))
         
@@ -117,7 +117,7 @@ def CalCostOfAllASes():
         totalCost0 = []
         totalCost1 = []
           
-        for i in range(5):
+        for i in range(10):
             # Compare the cost of two algo uder certain circumstance
             # asn = 7018, ratio = 0.2, delay=3ms, alpha=0.7,
             totalCost0.append(main(asn, 0.2, 3, 0.7, 0))

@@ -1,268 +1,268 @@
 (dp0
 I0
 (dp1
-I20
+I18
 F0.782996980464399
 ssI1
 (dp2
-I46
+I43
 F0.230796679506136
 ssI2
 (dp3
-I46
+I43
 F0.303548497283278
 ssI3
 (dp4
-I36
+I34
 F1.27987987754245
 ssI4
 (dp5
-I34
+I32
 F0.359674776933853
 ssI5
 (dp6
-I33
-F2.73985845598126
-sI11
+I10
 F0.77275760811344
-sI29
+sI27
 F10.5991388284493
-ssI7
+sI31
+F2.73985845598126
+ssI6
 (dp7
-I29
+I27
 F0.383932481584038
-ssI8
+ssI7
 (dp8
-I36
-F0.824637748542658
-ssI9
-(dp9
-I29
-F1.93693659855756
-ssI10
-(dp10
 I34
+F0.824637748542658
+ssI8
+(dp9
+I27
+F1.93693659855756
+ssI9
+(dp10
+I32
 F5.61884494538457
-ssI11
+ssI10
 (dp11
 I5
 F0.77275760811344
-ssI12
+ssI11
 (dp12
-I46
+I43
 F1.57467284056897
-ssI13
+ssI12
 (dp13
-I34
+I32
 F0.42692206811024
-ssI14
+ssI13
 (dp14
-I36
-F2.33602797836195
-sI46
-F1.18918741582091
-ssI16
-(dp15
-I46
-F1.91300161321378
-ssI17
-(dp16
-I46
-F2.5513700638689
-ssI18
-(dp17
 I34
+F2.33602797836195
+sI43
+F1.18918741582091
+ssI14
+(dp15
+I43
+F1.91300161321378
+ssI15
+(dp16
+I43
+F2.5513700638689
+ssI16
+(dp17
+I32
 F6.91499935344374
-ssI19
+ssI17
 (dp18
-I46
+I43
 F0.789418423716399
-ssI20
+ssI18
 (dp19
 I0
 F0.782996980464399
-sI36
+sI34
 F2.95228122867468
-sI45
+sI42
 F1.05109173852561
-ssI21
+ssI19
 (dp20
-I36
-F2.39388186575196
-ssI22
-(dp21
-I29
-F0.410934338251794
-ssI23
-(dp22
 I34
+F2.39388186575196
+ssI20
+(dp21
+I27
+F0.410934338251794
+ssI21
+(dp22
+I32
 F2.5828562440869
-ssI24
+ssI22
 (dp23
-I46
+I43
 F0.651636612713129
-ssI25
+ssI23
 (dp24
-I36
+I34
 F0.536172633029843
-ssI26
+ssI24
 (dp25
-I36
+I34
 F1.14234917045032
-ssI27
+ssI25
 (dp26
-I46
+I43
 F60.3095464758688
-ssI28
+ssI26
 (dp27
-I46
+I43
 F59.74640888143
-ssI29
+ssI27
 (dp28
-I36
+I34
 F3.34149401363677
+sI36
+F13.0551821715223
 sI5
 F10.5991388284493
-sI7
+sI6
 F0.383932481584038
-sI9
+sI8
 F1.93693659855756
-sI39
-F13.0551821715223
-sI22
+sI20
 F0.410934338251794
-sI31
+sI29
+F0.960883749376704
+ssI28
+(dp29
+I43
+F59.8122862074532
+ssI29
+(dp30
+I27
 F0.960883749376704
 ssI30
-(dp29
-I46
-F59.8122862074532
-ssI31
-(dp30
-I29
-F0.960883749376704
-ssI32
 (dp31
-I46
+I43
 F0.285103664740644
-ssI33
+ssI31
 (dp32
 I5
 F2.73985845598126
-ssI34
+ssI32
 (dp33
-I4
+I35
+F3.74195445826965
+sI4
 F0.359674776933853
 sI37
-F3.74195445826965
-sI40
 F0.54020828706131
-sI10
+sI9
 F5.61884494538457
-sI13
-F0.42692206811024
-sI46
+sI43
 F3.72002011770336
-sI18
+sI12
+F0.42692206811024
+sI16
 F6.91499935344374
-sI23
+sI21
 F2.5828562440869
-ssI35
+ssI33
 (dp34
-I46
+I43
 F0.178550628109316
-ssI36
+ssI34
 (dp35
 I3
 F1.27987987754245
-sI8
+sI7
 F0.824637748542658
+sI40
+F0.685562165323106
 sI43
-F0.685562165323106
-sI14
-F2.33602797836195
-sI20
-F2.95228122867468
-sI21
-F2.39388186575196
-sI46
 F3.52506386753417
-sI25
+sI13
+F2.33602797836195
+sI18
+F2.95228122867468
+sI19
+F2.39388186575196
+sI23
 F0.536172633029843
-sI26
+sI24
 F1.14234917045032
-sI29
+sI27
 F3.34149401363677
-ssI37
+ssI35
 (dp36
-I34
+I32
 F3.74195445826965
-ssI39
+ssI36
 (dp37
-I29
+I27
 F13.0551821715223
-ssI40
+ssI37
 (dp38
-I34
+I32
 F0.54020828706131
-ssI41
+ssI38
 (dp39
-I46
+I43
 F3.00806372808892
-ssI42
+ssI39
 (dp40
-I46
+I43
 F1.20103333687123
-ssI43
+ssI40
 (dp41
-I36
+I34
 F0.685562165323106
-ssI44
+ssI41
 (dp42
-I46
+I43
 F0.0
-ssI45
+ssI42
 (dp43
-I20
+I18
 F1.05109173852561
-ssI46
+ssI43
 (dp44
 I32
-F0.285103664740644
+F3.72002011770336
+sI33
+F0.178550628109316
+sI34
+F3.52506386753417
 sI1
 F0.230796679506136
-sI34
-F3.72002011770336
-sI35
-F0.178550628109316
-sI36
-F3.52506386753417
-sI12
-F1.57467284056897
-sI41
+sI38
 F3.00806372808892
-sI42
+sI39
 F1.20103333687123
-sI44
+sI41
 F0.0
+sI11
+F1.57467284056897
+sI13
+F1.18918741582091
+sI14
+F1.91300161321378
+sI15
+F2.5513700638689
+sI17
+F0.789418423716399
+sI22
+F0.651636612713129
 sI2
 F0.303548497283278
-sI14
-F1.18918741582091
-sI16
-F1.91300161321378
-sI17
-F2.5513700638689
-sI19
-F0.789418423716399
-sI24
-F0.651636612713129
-sI27
+sI25
 F60.3095464758688
-sI28
+sI26
 F59.74640888143
-sI30
+sI28
 F59.8122862074532
+sI30
+F0.285103664740644
 ss.(dp0
 I0
 S'Launceston, Tazmania'
@@ -285,180 +285,169 @@ p6
 sg4
 I3
 sI7
-S'Victor Harbour, Australia'
+S'Shepparton, Australia'
 p7
 sI8
-S'Shepparton, Australia'
+S'Mount Gambier, Australia'
 p8
 sI9
-S'Mount Gambier, Australia'
+S'Townsville, Australia'
 p9
 sI10
-S'Townsville, Australia'
+S'Bunbury, Australia'
 p10
 sI11
-S'Bunbury, Australia'
+S'Tamworth, Australia'
 p11
 sI12
-S'Tamworth, Australia'
+S'Maroochydore, Australia'
 p12
 sg6
 I5
 sI14
-S'Canberra, Australia'
+S'Armidale, Australia'
 p13
 sI15
-S'tmhs'
+S'Moree, Australia'
 p14
 sI16
-S'Armidale, Australia'
+S'Cairns, Australia'
 p15
 sI17
-S'Moree, Australia'
-p16
-sS'Napa, CA'
-p17
-I6
-sI19
 S'Bathurst, Australia'
+p16
+sI18
+S'Hobart, Australia'
+p17
+sI19
+S'Mildura, Australia'
 p18
 sI20
-S'Hobart, Australia'
+S'Yorketown, Australia'
 p19
 sI21
-S'Mildura, Australia'
+S'Rockhampton, Australia'
 p20
 sI22
-S'Yorketown, Australia'
+S'Newcastle, Australia'
 p21
 sI23
-S'Rockhampton, Australia'
+S'Ballarat, Australia'
 p22
 sI24
-S'Newcastle, Australia'
+S'Warnambool, Australia'
 p23
 sI25
-S'Ballarat, Australia'
+S'Los Angeles, CA'
 p24
 sI26
-S'Warnambool, Australia'
+S'Palo Alto, CA'
 p25
 sI27
-S'Los Angeles, CA'
+S'Adelaide, Australia'
 p26
 sI28
-S'Palo Alto, CA'
+S'San Jose, CA'
 p27
 sI29
-S'Adelaide, Australia'
+S'Port Pirie, Australia'
 p28
 sI30
-S'San Jose, CA'
+S'Gosford, Australia'
 p29
 sI31
-S'Port Pirie, Australia'
+S'Kalgoorlie, Australia'
 p30
 sI32
-S'Gosford, Australia'
+S'Brisbane, Australia'
 p31
 sI33
-S'Kalgoorlie, Australia'
+S'Campbelltown, Australia'
 p32
 sI34
-S'Brisbane, Australia'
-p33
-sg13
-I14
-sI36
 S'Melbourne, Australia'
+p33
+sS'Canberra, Australia'
 p34
-sI6
-g17
-sI38
-S'hhts'
-p35
-sI39
-S'Darwin, Australia'
-p36
-sI40
-S'Toowoomba, Australia'
-p37
-sI41
-S'Lismore, Australia'
-p38
-sI42
-S'Orange, Australia'
-p39
-sI43
-S'Bendigo, Australia'
-p40
-sI44
-S'Port Maquarie, Australia'
-p41
-sI45
-S'Ulverstone, Tasmania'
-p42
-sI46
-S'Sydney, Australia'
-p43
-sg21
-I22
-sg2
-I1
-sS'Campbelltown, Australia'
-p44
-I35
-sI13
-S'Maroochydore, Australia'
-p45
-sI18
-S'Cairns, Australia'
-p46
-sg3
-I2
-sg14
-I15
-sg45
 I13
-sg16
-I17
-sg46
-I18
+sI36
+S'Darwin, Australia'
+p35
+sI6
+S'Victor Harbour, Australia'
+p36
+sI38
+S'Lismore, Australia'
+p37
+sI39
+S'Orange, Australia'
+p38
+sI40
+S'Bendigo, Australia'
+p39
+sI41
+S'Port Maquarie, Australia'
+p40
+sI42
+S'Ulverstone, Tasmania'
+p41
+sI43
+S'Sydney, Australia'
+p42
 sg19
 I20
-sg20
-I21
-sg24
-I25
+sg2
+I1
+sg32
+I33
+sI13
+g34
+sg3
+I2
+sg12
+I12
+sg14
+I15
+sg15
+I16
+sg17
+I18
+sg18
+I19
+sg22
+I23
+sg23
+I24
 sg25
 I26
-sg27
-I28
+sg26
+I27
 sg28
 I29
 sg30
 I31
-sg32
-I33
+sg31
+I32
 sg33
 I34
-sg34
-I36
 sI35
-g44
-sI37
 S'Mackay, Australia'
-p47
+p43
+sI37
+S'Toowoomba, Australia'
+p44
+sg37
+I38
 sg38
-I41
-sg39
+I39
+sg41
 I42
-sg42
-I45
 sg1
 I0
 sg5
 I4
+sg36
+I6
 sg7
 I7
 sg8
@@ -467,60 +456,53 @@ sg9
 I9
 sg10
 I10
+sg16
+I17
+sg20
+I21
+sg27
+I28
+sg43
+I35
+sg44
+I37
+sg39
+I40
+sg13
+I14
 sg11
 I11
-sg18
-I19
-sg22
-I23
+sg21
+I22
+sg24
+I25
 sg29
 I30
-sg47
-I37
-sg37
-I40
-sg40
-I43
-sg15
-I16
-sg12
-I12
-sg23
-I24
-sg26
-I27
-sg31
-I32
-sg36
-I39
-sg41
-I44
 sg35
-I38
-sg43
-I46
+I36
+sg40
+I41
+sg42
+I43
 s.(dp0
-I5
+I25
 (lp1
-I7543
-asI6
+I1
+asI26
 (lp2
-I4565
-asI46
+I577
+aI2914
+aI4637
+asI43
 (lp3
 I7543
 aI3549
 aI4637
 aI2687
-asI27
-(lp4
-I1
 asI28
-(lp5
-I577
-aI2914
-aI4637
-asI30
-(lp6
+(lp4
 I1239
+asI5
+(lp5
+I7543
 as.

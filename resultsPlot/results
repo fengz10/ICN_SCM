@@ -1,23 +1,97 @@
 
 多个AS的情况下平均cost减少了百分比如下：
-0.484322626253
-
+Average cost reduce ratio= 0.522671287007
 
 对于不同的cache ratio的效果
+
 cost reduced ratio of 7018
-reduced ration =  0.537772075239
+reduced ration =  0.622950290729
 cost reduced ratio of 3356
 reduced ration =  0.521661634014
 
-
 不同zipf
+
 cost reduced ratio of 7018
-reduced ration =  0.572906961563
+reduced ration =  0.552717858011
 cost reduced ratio of 3356
 reduced ration =  0.498055671345
 
+
+
+
 每个AS 的信息有，AS号，隶属，所有router个数，PoP个数， 邻居AS个数
 routers links
+
+################1221#######################
+All routers number = 44
+Link number =  44
+Link number2 =  44
+PoP number = 5
+Neighbor ASes number = 8
+Neighbor ASes:  set([1, 2914, 577, 1239, 3549, 7543, 4637, 2687])
+################1239#######################
+All routers number = 52
+Link number =  84
+Link number2 =  84
+PoP number = 35
+Neighbor ASes number = 44
+Neighbor ASes:  set([1, 1668, 5511, 2828, 3602, 1299, 5400, 3356, 4637, 10910, 4513, 8220, 174, 6453, 3257, 6461, 702, 3701, 577, 6467, 1221, 7543, 209, 852, 4565, 11608, 7132, 3549, 2914, 4323, 3300, 7911, 3561, 7018, 5650, 701, 2497, 4755, 2548, 4725, 16631, 3320, 1785, 6395])
+################2914#######################
+All routers number = 70
+Link number =  111
+Link number2 =  111
+PoP number = 28
+Neighbor ASes number = 39
+Neighbor ASes:  set([1, 5511, 7176, 6539, 2828, 5650, 1299, 5400, 6939, 3356, 4637, 10910, 4513, 8220, 174, 6453, 3257, 6461, 2497, 6467, 1221, 1784, 209, 4565, 1239, 11608, 3549, 4323, 3300, 101, 7911, 3561, 7018, 12050, 701, 2548, 16631, 3320, 6395])
+################3257#######################
+All routers number = 41
+Link number =  87
+Link number2 =  87
+PoP number = 10
+Neighbor ASes number = 14
+Neighbor ASes:  set([1, 2914, 4323, 7911, 3561, 1239, 3549, 209, 1299, 16631, 5400, 6395, 701, 702])
+################3356#######################
+All routers number = 63
+Link number =  285
+Link number2 =  285
+PoP number = 20
+Neighbor ASes number = 43
+Neighbor ASes:  set([1, 1668, 5511, 7176, 2828, 12050, 1299, 6939, 8220, 4637, 10910, 4513, 5669, 174, 15412, 6453, 701, 702, 2497, 13129, 7543, 209, 5650, 4565, 1239, 11608, 3549, 2914, 4323, 3300, 101, 7911, 3561, 7018, 4589, 6461, 2548, 4725, 16631, 3320, 1785, 6395, 3967])
+################3967#######################
+All routers number = 7
+PoP_graph= {0: {4: 0.0288213047287407}, 1: {4: 0.0926850068982159}, 2: {4: 0.0331657604143426}, 3: {6: 0.302952246334439}, 4: {0: 0.0288213047287407, 1: 0.0926850068982159, 2: 0.0331657604143426, 5: 20.5270464743481, 6: 2.49858032854643}, 5: {4: 20.5270464743481}, 6: {3: 0.302952246334439, 4: 2.49858032854643}}
+PoPsDict= {0: 'Sunnyvale, CA', 1: 'Palo Alto, CA', 'Sunnyvale, CA': 0, 'Palo Alto, CA': 1, 4: 'Santa Clara, CA', 5: 'New York, NY', 6: 'El Segundo, CA', 'San Jose, CA': 2, 2: 'San Jose, CA', 'Irvine, CA': 3, 'Santa Clara, CA': 4, 3: 'Irvine, CA', 'New York, NY': 5, 'El Segundo, CA': 6}
+ExternalAS_Dict= {0: [3561], 1: [3561], 2: [3356], 4: [3561], 5: [4006, 3561, 3549], 6: [3561]}
+Link number =  6
+Link number2 =  6
+PoP number = 6
+Neighbor ASes number = 4
+Neighbor ASes:  set([3561, 3356, 3549, 4006])
+################4755#######################
+All routers number = 9
+Link number =  11
+Link number2 =  11
+PoP number = 2
+Neighbor ASes number = 5
+Neighbor ASes:  set([3561, 5511, 4637, 3549, 6453])
+################6461#######################
+All routers number = 19
+Link number =  34
+Link number2 =  34
+PoP number = 14
+Neighbor ASes number = 33
+Neighbor ASes:  set([1, 2497, 7176, 2828, 1299, 5400, 6939, 8220, 4637, 5669, 3356, 5511, 6453, 701, 577, 6467, 13129, 209, 4565, 9942, 1239, 11608, 3549, 2914, 4323, 3300, 3561, 7018, 4589, 2548, 4725, 16631, 6395])
+################7018#######################
+All routers number = 115
+Link number =  148
+Link number2 =  148
+PoP number = 33
+Neighbor ASes number = 37
+Neighbor ASes:  set([1, 7170, 1668, 5511, 2828, 11537, 5650, 1299, 5400, 3356, 10910, 4513, 4006, 174, 6453, 701, 4544, 6467, 209, 4565, 1239, 7132, 3549, 2914, 4323, 3300, 101, 7911, 3561, 6461, 2548, 16631, 3320, 1785, 6395, 2686, 2687])
+
+
+
+# The below data is the results before fixing a bug.
 
 ################1221#######################
 All routers number = 44

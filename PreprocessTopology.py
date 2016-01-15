@@ -42,23 +42,6 @@ for asn in asnCare:
     for edge in edgesInternal:
         PoPNames += [edge[0], edge[1]]
 
-    # Record external link of the AS
-    edgesExternal = {}
-    for asnTem in AS_topology[asn]:
-        str = './Rocketfuel/maps-n-paths/%d:%d/edges.lat'%(asn,asnTem)
-        edgesExternal[asnTem] = ReadEdges(str)
-        for edge in edgesExternal[asnTem]:
-            PoPNames += [edge[0], edge[1]]            
-                
-    #        if not edge[0] in PoPsN2I:
-    #            print str
-    #            print 'edge %s is not in the dict'%edge[0]
-    #        if not edge[1] in PoPsN2I:
-    #            print str
-    #            print 'edge %s is not in the dict'%edge[1]
-    #    print 'All edges are in the dict'
-    
-    
     
     # Create a dict to map index to PoP Location name, and name to index
     # It can lookup name and index at the same time
@@ -69,6 +52,25 @@ for asn in asnCare:
         PoPsDict[i] = name
         i += 1
     del i
+
+
+    # Record external link of the AS
+    edgesExternal = {}
+    for asnTem in AS_topology[asn]:
+        str = './Rocketfuel/maps-n-paths/%d:%d/edges.lat'%(asn,asnTem)
+        edgesExternal[asnTem] = ReadEdges(str)
+       
+                
+    #        if not edge[0] in PoPsN2I:
+    #            print str
+    #            print 'edge %s is not in the dict'%edge[0]
+    #        if not edge[1] in PoPsN2I:
+    #            print str
+    #            print 'edge %s is not in the dict'%edge[1]
+    #    print 'All edges are in the dict'
+    
+    
+
     
     # Mapping PoP names to indexes    
     edgesInternal = [(PoPsDict[n1], PoPsDict[n2], delay) for (n1, n2, delay)\
@@ -78,7 +80,8 @@ for asn in asnCare:
         # Most external links connect the routers in the same PoP location, 
         # and we exclude those not in the same PoP location
         edgesExternal[asnTem] = [(PoPsDict[n1], PoPsDict[n2], delay)\
-        for (n1, n2, delay) in edgesExternal[asnTem] if n1 == n2]
+        for (n1, n2, delay) in edgesExternal[asnTem] if n1 == n2 and \
+        n1 in PoPsDict]
         print 'edgesExternal[%d]='%asnTem, edgesExternal[asnTem]
         
     # Record the internal topology into the standard graph structure

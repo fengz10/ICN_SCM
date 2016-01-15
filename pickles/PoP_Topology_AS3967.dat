@@ -1,41 +1,41 @@
 (dp0
 I0
 (dp1
-I11
+I4
 F0.0288213047287407
 ssI1
 (dp2
-I11
+I4
 F0.0926850068982159
-ssI3
+ssI2
 (dp3
-I11
+I4
 F0.0331657604143426
-ssI10
+ssI3
 (dp4
-I18
+I6
 F0.302952246334439
-ssI11
+ssI4
 (dp5
 I0
 F0.0288213047287407
 sI1
 F0.0926850068982159
-sI18
-F2.49858032854643
-sI3
+sI2
 F0.0331657604143426
-sI13
+sI5
 F20.5270464743481
-ssI13
+sI6
+F2.49858032854643
+ssI5
 (dp6
-I11
+I4
 F20.5270464743481
-ssI18
+ssI6
 (dp7
-I10
+I3
 F0.302952246334439
-sI11
+sI4
 F2.49858032854643
 ss.(dp0
 I0
@@ -46,93 +46,33 @@ S'Palo Alto, CA'
 p2
 sg1
 I0
-sI3
-S'San Jose, CA'
-p3
-sI4
-S'Chicago, IL'
-p4
-sI5
-S'San Francisco, CA'
-p5
-sI6
-S'Sterling, VA'
-p6
-sI7
-S'Oak Brook, IL'
-p7
-sI8
-S'Jersey City, NJ'
-p8
-sI9
-S'Boston, MA'
-p9
-sI10
-S'Irvine, CA'
-p10
-sg6
-I6
-sI12
-S'Washington, DC'
-p11
-sI2
-S'Herndon, VA'
-p12
-sI14
-S'Waltham, MA'
-p13
-sg10
-I10
-sI16
-S'Tokyo, Japan'
-p14
-sI17
-S'London, UnitedKingdom'
-p15
-sI18
-S'El Segundo, CA'
-p16
-sS'New York, NY'
-p17
-I13
-sg16
-I18
-sg15
-I17
-sg9
-I9
-sg11
-I12
 sg2
 I1
-sg3
-I3
-sg5
-I5
-sg7
-I7
-sI13
-g17
-sI11
+sI4
 S'Santa Clara, CA'
-p18
-sg13
-I14
-sg14
-I16
-sI15
-S'Karlsruhe, Germany'
-p19
-sg8
-I8
-sg12
+p3
+sI5
+S'New York, NY'
+p4
+sI6
+S'El Segundo, CA'
+p5
+sS'San Jose, CA'
+p6
 I2
-sg4
+sI2
+g6
+sS'Irvine, CA'
+p7
+I3
+sg3
 I4
-sg18
-I11
-sg19
-I15
+sI3
+g7
+sg4
+I5
+sg5
+I6
 s.(dp0
 I0
 (lp1
@@ -142,47 +82,16 @@ asI1
 I3561
 asI2
 (lp3
-I3561
-asI3
-(lp4
 I3356
 asI4
-(lp5
+(lp4
 I3561
 asI5
-(lp6
-I10910
-asI6
-(lp7
-I3561
-aI3320
-asI7
-(lp8
-I3561
-asI8
-(lp9
-I3561
-asI11
-(lp10
-I3561
-asI12
-(lp11
-I3561
-asI13
-(lp12
+(lp5
 I4006
 aI3561
 aI3549
-asI14
-(lp13
-I3561
-asI16
-(lp14
-I3561
-asI17
-(lp15
-I3549
-asI18
-(lp16
+asI6
+(lp6
 I3561
 as.
