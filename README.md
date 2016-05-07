@@ -22,7 +22,7 @@ It will output the path length and profit of the two different algorithms (short
 ### 7. CalResults.py
 Calculate costs of various scenarios
 
-### 8. Programs in resultsPlot direction
+### 8. Programs in resultsPlot directory
 Plot the results.
 
 ### 9. Fixed bugs:
