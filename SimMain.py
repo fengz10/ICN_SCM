@@ -260,6 +260,7 @@ def main(asn = 1221, cacheRatio=0.1, delayLimit = 40, alpha = 0.7, algo = 0):
             else:                
                 # If the size of the content is too large, it neends fragment
                 bwTemp = availBW[node]
+                availBW[node] = 0
                 bwConsumeDictVC[vID][cID] -= bwTemp
                 
                 if not node in xInventroyDict:                    
@@ -283,8 +284,11 @@ def main(asn = 1221, cacheRatio=0.1, delayLimit = 40, alpha = 0.7, algo = 0):
             totalCost += costOfStorageDict[node] * sizeOfID[cID]
         # Bandwidth cost
         totalCost += costOfBWDict[node] 
+
+    # Calculate link utilization
+    linkUsage = 1 - sum(availBW.values())/(len(availBW)*BW_limit)
     
-    return totalCost
+    return totalCost, linkUsage
 ##########################################################################
     
     

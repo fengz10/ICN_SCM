@@ -1,0 +1,71 @@
+#!/usr/bin/python
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+ratio = np.arange(0, 1.01, 0.05)
+
+# Data from AS 7018
+# Other inputs are: main(7018, ratio, 3, 0.7, 0)
+
+
+
+linkUsage7018Algo0= [0.048975646271287518, 0.036626526961990993, 0.037824335190893288, 0.025345618101399035, 0.02194232793383032, 0.020330433097322985, 0.018653787548406651, 0.014908708862674392, 0.012411878522506336, 0.010460856790980166, 0.0080966642866000752, 0.0077351190121316971, 0.0053686527670338104, 0.0052071095127518511, 0.0044961420876535431, 0.0034851847016800553, 0.0024265792580208225, 0.0016208894465983281, 0.00091098748412410391, 0.00055082010319273955, 0.0]
+linkUsage7018Algo1= [0.054657870936427308, 0.037035290191941669, 0.036435692177041311, 0.031212106204410416, 0.033447464803445667, 0.028260750257531421, 0.028862084858885161, 0.02226413725419437, 0.026222525451434654, 0.01689977199535634, 0.017230244148447017, 0.014127476893335267, 0.015449844990723615, 0.013385642853991053, 0.0090109971075792439, 0.0078945831772682107, 0.0060927069738400119, 0.0051436909790744225, 0.0031280974544735775, 0.0014428118867820916, 0.00036661609363333183]
+
+
+
+linkUsage3356Algo0= [0.082562077967373193, 0.070879045710200067, 0.066897189517108213, 0.063783021999701872, 0.046425898494075177, 0.040971029287029413, 0.035404867600519994, 0.03787749036910347, 0.035761667098398654, 0.027386884823596969, 0.021074411064744759, 0.021026488925010856, 0.017781927691959864, 0.013693432278962359, 0.014334348513394924, 0.0088571887772117778, 0.0071235160515536024, 0.0054836024695953832, 0.0034469399802927623, 0.0018899737796405414, 0.0]
+linkUsage3356Algo1= [0.092355698616704188, 0.082114757749593231, 0.059618817044238548, 0.065521495103524507, 0.052565397840022711, 0.050692219228267929, 0.049243666322803512, 0.037743297745116741, 0.032729036106638534, 0.030168757906463905, 0.026798577518046672, 0.028918614321065805, 0.022593784673410423, 0.018595150707571739, 0.016997433818725462, 0.012518828973728824, 0.011134259428301785, 0.0084798230639416047, 0.0063612975730889974, 0.0051760563027452577, 0.0017849996514559875]
+
+
+
+
+#max7018 = max(linkUsage7018Algo0+ linkUsage7018Algo1)
+maxLinkUsage = max(linkUsage7018Algo0 + linkUsage7018Algo1 + linkUsage3356Algo0 
+               + linkUsage3356Algo1)
+               
+linkUsage7018Algo0 = np.array(linkUsage7018Algo0)/maxLinkUsage
+linkUsage7018Algo1 = np.array(linkUsage7018Algo1)/maxLinkUsage
+
+#max3356 = max(linkUsage3356Algo0+ linkUsage3356Algo1)
+linkUsage3356Algo0 = np.array(linkUsage3356Algo0)/maxLinkUsage
+linkUsage3356Algo1 = np.array(linkUsage3356Algo1)/maxLinkUsage
+
+#########################Calculate reduced ratio############################
+avg7018Algo0 = sum(linkUsage7018Algo0)/len(linkUsage7018Algo0)
+avg7018Algo1 = sum(linkUsage7018Algo1)/len(linkUsage7018Algo1)
+print 'link usage reduced ratio of 7018'
+print 'reduced ratio = ', (avg7018Algo1 - avg7018Algo0)/avg7018Algo1
+
+
+avg3356Alg0 = sum(linkUsage3356Algo0)/len(linkUsage3356Algo0)
+avg3356Alg1 = sum(linkUsage3356Algo1)/len(linkUsage3356Algo1)
+
+print 'link usage reduced ratio of 3356'
+print 'reduced ratio = ', (avg3356Alg1 - avg3356Alg0)/avg3356Alg1
+
+#######################################################################
+
+
+# Comment
+plt.plot(ratio, linkUsage7018Algo0, "kD-", label="SCM-base AS7018", markersize = 8, linewidth=2)
+plt.plot(ratio, linkUsage7018Algo1, "ro--", label="Baseline AS7018", markersize = 8, linewidth=2)
+plt.plot(ratio, linkUsage3356Algo0, "b^-",label="SCM-base AS3356", markersize = 8, linewidth=2)
+plt.plot(ratio, linkUsage3356Algo1, "gv--",label="Baseline AS3356", markersize = 8, linewidth=2)
+
+#plt.plot(ratio, cost2914Algo0, "g<-", label ="SCM-base AS2914", markersize = 8, linewidth=2)
+#plt.plot(ratio, cost2914Algo1, "g>--", label ="Baseline AS2914", markersize = 8, linewidth=2)
+
+
+plt.xticks(np.arange(0,1.1,0.1),('0', '0.1', '0.2', '0.3', '0.4', '0.5', \
+'0.6', '0.7', '0.8', '0.9', '1.0'), fontsize = 14)
+plt.yticks(np.arange(0, 1.1, 0.2), ('0', '0.2', '0.4', '0.6', '0.8', '1.0'), fontsize = 14)
+plt.ylim([0, 1.03])
+plt.xlabel('Replicate ratio (%)',fontsize = 14) 
+plt.ylabel('Normalized link usage',fontsize = 14) 
+
+plt.legend(fontsize = 14)
+#pylab.legend(loc='upper right')
+plt.tight_layout()
+plt.show()
