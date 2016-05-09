@@ -1,5 +1,5 @@
 ## Copyright 
-Written by Zhen Feng of Tsinghua University
+Written by Zhen Feng of Tsinghua University.
 Copyright GPLv2
 The code is written for the simulation experiment of my research papers.
 Dataset is from Rocketfuel.
